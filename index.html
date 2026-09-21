@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevOps Study Hub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>DevOps <span>Study Hub</span></h1>
+        <p>Centralize seus estudos e domine a cultura de integração e automação.</p>
+    </header>
+
+    <main class="container">
+        <!-- Barra de Progresso Geral -->
+        <section class="progress-section">
+            <h2>Seu Progresso Atual</h2>
+            <div class="progress-bar-container">
+                <div id="progress-bar" class="progress-bar">0%</div>
+            </div>
+            <p id="progress-text">Clique nos tópicos abaixo para marcar como concluído!</p>
+        </section>
+
+        <!-- Trilha de Aprendizado -->
+        <section class="grid-roadmap">
+            
+            <!-- Card 1 -->
+            <div class="card">
+                <h3>1. Cultura & Base</h3>
+                <p>Entenda o manifesto ágil, colaboração e os fundamentos de Linux e Git.</p>
+                <ul class="task-list">
+                    <li><label><input type="checkbox" class="task-check"> Cultura DevOps</label></li>
+                    <li><label><input type="checkbox" class="task-check"> Terminal Linux</label></li>
+                    <li><label><input type="checkbox" class="task-check"> Git & GitHub</label></li>
+                </ul>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="card">
+                <h3>2. CI/CD & Automação</h3>
+                <p>Aprenda a automatizar testes, compilações e entregas de software continuamente.</p>
+                <ul class="task-list">
+                    <li><label><input type="checkbox" class="task-check"> Jenkins / GitHub Actions</label></li>
+                    <li><label><input type="checkbox" class="task-check"> Docker (Containers)</label></li>
+                    <li><label><input type="checkbox" class="task-check"> Kubernetes (Orquestração)</label></li>
+                </ul>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="card">
+                <h3>3. Infraestrutura como Código (IaC)</h3>
+                <p>Configure e gerencie servidores e nuvens usando arquivos de configuração.</p>
+                <ul class="task-list">
+                    <li><label><input type="checkbox" class="task-check"> Terraform</label></li>
+                    <li><label><input type="checkbox" class="task-check"> Ansible</label></li>
+                    <li><label><input type="checkbox" class="task-check"> AWS / Azure / GCP</label></li>
+                </ul>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="card">
+                <h3>4. Observabilidade</h3>
+                <p>Monitore aplicações em produção, analise logs e antecipe problemas do sistema.</p>
+                <ul class="task-list">
+                    <li><label><input type="checkbox" class="task-check"> Prometheus & Grafana</label></li>
+                    <li><label><input type="checkbox" class="task-check"> Stack ELK (Elasticsearch)</label></li>
+                    <li><label><input type="checkbox" class="task-check"> Tracing com Jaeger</label></li>
+                </ul>
+            </div>
+
+        </section>
+    </main>
+
+    <footer>
+        <p>Foco, Automação e Resiliência. Pratique hospedando este projeto no <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
