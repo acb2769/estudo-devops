@@ -5,13 +5,15 @@ on:
   pull_request:
       branches:["main"]
 
-      jobs:
-        validacao-estatica:
-        runs-on: ubuntu-latest
-        steps:
-          uses:actitions/checkout@v4
+  jobs:
+     validacao-estatica:
+     runs-on: ubuntu-latest
+     steps:
 
-          -name: Verificar arquivos essenciais
-            runs:|
+        - name: Checkout do codigo
+          uses:actitions/checkout@v3
+
+        - name: Verificar arquivos essenciais
+            run:|
             test -f index.html && echo "HTML.encontado!"
             test -f style.css && echo ?"Css encontrado!"
