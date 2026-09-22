@@ -11,9 +11,9 @@ on:
      steps:
 
         - name: Checkout do codigo
-          uses:actitions/checkout@v3
+          uses:actitions/checkout@v4
 
         - name: Verificar arquivos essenciais
             run:|
             test -f index.html && echo "HTML.encontado!"
-            test -f style.css && echo ?"Css encontrado!"
+            test -f style.css && echo "Css encontrado!"
