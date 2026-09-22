@@ -15,5 +15,5 @@ jobs:
 
       - name: Verificar arquivos essenciais
         run: |
-          test -f index-teste.html && echo "HTML encontrado!"
+          test -f index.html && echo "HTML encontrado!"
           test -f style.css && echo "Css encontrado!"
