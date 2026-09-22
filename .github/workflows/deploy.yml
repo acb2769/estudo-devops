@@ -1,0 +1,17 @@
+name: Contiuuos Integration
+on:
+  push:
+    branches:["main", "master"]
+  pull_request:
+      branches:["main"]
+
+      jobs:
+        validacao-etatica:
+        runs-on: ubuntu-lastest
+        steps:
+          uses:actitions/checkout@v4
+
+          -name: Verificar arquivos essenciais
+            runs:|
+            test -f index.html && echo "HTML.encontado!"
+            test -f style.css && echo ?"Css encontrado!"
