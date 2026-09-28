@@ -17,3 +17,6 @@ jobs:
         run: |
           test -f index.html && echo "HTML encontrado!"
           test -f style.css && echo "Css encontrado!"
+
+      - name: Verificar memoria
+        run: isb_release -a && free -html
