@@ -1,5 +1,5 @@
 :root {
-    --bg-color: #ee0808;
+    --bg-color: #0f172a;
     --card-bg: #1e293b;
     --text-color: #f8fafc;
     --text-muted: #94a3b8;
@@ -63,7 +63,7 @@ header p {
 }
 
 .progress-bar-container {
-    background-color: #2a0f0f;
+    background-color: rgba(253, 5, 5, 0.979);
     border-radius: 20px;
     overflow: hidden;
     margin-bottom: 10px;
