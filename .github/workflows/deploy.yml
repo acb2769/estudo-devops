@@ -22,7 +22,7 @@ jobs:
         run: isb_release -a && free -html
 
       - name: Validar sintaxe do HTML
-        uses: htmlhint/HTMLHint/.github/actions/htmlhint@master
+        uses: htmlhint/HTMLHint/.github/actions/htmlhint@main
         with: 
           target_pattern: 'index.html'
 
